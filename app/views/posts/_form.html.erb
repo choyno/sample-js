@@ -1,0 +1,10 @@
+<%= form_for(@post, :remote => true) do |f| %>
+<%=  f.text_field :title %>
+<br />
+<%=  f.text_field :body %>
+<br />
+<%= f.submit %>
+<%= f.button "reset", type: "reset" %>
+<% end %>
+
+
